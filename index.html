@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            background-color: rgb(18, 138, 237) ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Customer Survey Form</h1>
+
+   <form id="myform" class="form1">
+      
+    <div class="form-action">
+   <label for="" style="display: block; margin-bottom: 10px;" >First Name</label> 
+   <input type="text" name="First Name" required> 
+    </div>
+
+    <div class="form-action">
+   <label for="" style="display: block; margin-bottom: 10px;">Last Name</label>
+   <input type="text" name="Last Name" required>
+    </div>
+
+    <div class="form-action">
+      <label for="email" style="display: block; margin-bottom: 10px;">Email</label>  
+      <input type="email" name="Email" placeholder="Enter Your Mail Id" required> 
+   </div>
+
+   <div class="form-action">
+      <label for="number" style="display: block; margin-bottom: 10px;">Mobile Number</label> 
+      <input type="tel" name="Mobile Number" placeholder="Enter Mobile Number" minlength="10" maxlength="10" required>
+   </div>
+
+    <div class="form-action">
+   <label for="" style="display: block; margin-bottom: 10px;">Date of Birth</label> 
+   <input type="date" name="Date of Birth" required> 
+    </div>
+
+<div class="form-action">
+   <label for="Country" style="display: block; margin-bottom: 10px;">Country</label> 
+   <select name="countries" name="Country" id="countries"></select>
+</div>
+
+<div class="form-action">
+   <label for="gender">Gender</label>
+   <input type="radio" id="maleRadio" name="gender" value="Male" required>
+   <label for="maleRadio">Male</label>
+   <input type="radio" id="femaleRadio" name="gender" value="Female" required>
+   <label for="femaleRadio">Female</label>
+ </div>
+
+ 
+
+<div class="form-action">
+   <label for="profession" style="display: block; margin-bottom: 10px;">Profession</label> 
+   <select  id="profession" required>
+      <option value=""></option>
+      <option value="F">Fresher</option>
+      <option value="E">Experience</option>
+      <option value="s">Student</option>
+   </select>
+</div>
+
+
+<button type="submit" class="btn1">Submit</button>
+   <Button type="reset" class="btn2">Reset</Button>
+
+   </form>
+
+
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Submitted Form Data</h2>
+        <div id="result-container"></div>
+      </div>
+    </div>
+
+
+<script src="App.js"> </script>
+</body>
+</html>
